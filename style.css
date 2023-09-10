@@ -1,3 +1,29 @@
+body {
+    height: 5936px;
+}
+
+.header {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+.header * {
+    color: #E4D8CC;
+    font-family: Inter;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 218.182% */
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* .header div {
+    display: flex;
+} */
+
 .section1 {
     background-image: url(./img/image1.png);
     background-size: cover;
@@ -319,12 +345,42 @@
 }
 
 .section6 {
-    background-color: white;
     display: flex;
-    justify-content: space-evenly; 
+    justify-content: space-evenly;
+    margin-top: 116px;
+    margin-bottom: 112px;
 }
 
-.section6 p:first-child {
+.section6 * {
+    display: flex;
+}
+
+.section6 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section6 img:first-of-type {
+    width: 72px;
+    height: 62px;
+    flex-shrink: 0;
+}
+
+.section6 img:nth-child(3) {
+    width: 73px;
+    height: 73px;
+    flex-shrink: 0;
+}
+
+.section6 img:last-child {
+    width: 140px;
+    height: 37px;
+    flex-shrink: 0;
+}
+
+.section6 p:first-of-type {
+    width: 489px;
     color: #E4D8CC;
     text-align: center;
     font-family: Inter;
@@ -334,13 +390,7 @@
     line-height: 32px; /* 133.333% */
 }
 
-.section6 img:first-child {
-    width: 72px;
-    height: 62px;
-    flex-shrink: 0;
-}
-
-.section6 p:nth-child(2) {
+.section6 p:nth-last-child(2) {
     color: #E4D8CC;
     font-family: Inter;
     font-size: 14px;
@@ -349,8 +399,24 @@
     line-height: 24px; /* 171.429% */
 }
 
-.section6 p:nth-child(4){
-    color: red;
+.section6 p:last-child {
+    color: #E4D8CC;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+}
+
+.section6 p:nth-child(2) { /*second quote */
+    width: 409px;
+    color: #E4D8CC;
+    text-align: center;
+    font-family: Inter;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 139.13% */
 }
 
 .section7 {
