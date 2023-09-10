@@ -1,11 +1,8 @@
-body {
-    height: 5936px;
-}
-
 .header {
     position: absolute;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .header * {
@@ -19,10 +16,6 @@ body {
     text-transform: uppercase;
     text-decoration: none;
 }
-
-/* .header div {
-    display: flex;
-} */
 
 .section1 {
     background-image: url(./img/image1.png);
@@ -425,6 +418,11 @@ body {
     justify-content: space-evenly;
 }
 
+.section7 * {
+    display: flex;
+    align-content: space-evenly;
+}
+
 .section7 p:only-of-type {
     color: #E4D8CC;
     font-family: Inter;
@@ -448,12 +446,16 @@ body {
 .section7 div {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    justify-content: space-evenly;
 }
 
 .section8 {
     flex-shrink: 0;
     background-image: url(./img/imagesec8.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
 }
 
 .section8 p:first-child {
@@ -488,8 +490,8 @@ body {
     text-transform: uppercase;
 }
 
-.section8 img:first-of-type {
-    background: #E4D8CC;;
+.section8 img:last-child {
+    background-color: #E4D8CC;
     width: 271px;
     height: 1px;
     flex-shrink: 0;;
@@ -497,8 +499,28 @@ body {
 
 .footer {
     height: 626px;
-    flex-shrink: 0;
     background: #101010;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer section {
+    display: flex;
+}
+
+.fsection1 {
+    height: 249px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.fsection2 {
+    height: 280px;
+
+}
+
+.fsection3 {
+    height: 80px;
 }
 
 .footer1 p:only-of-type {
@@ -510,7 +532,7 @@ body {
     line-height: 24px; /* 104.348% */
 }
 
-.footer1 button:only-of-type {
+.footer1 a:only-of-type {
     width: 215px;
     height: 42px;
     flex-shrink: 0;
@@ -535,7 +557,7 @@ body {
     line-height: 24px; /* 104.348% */
 }
 
-.footer2 button:only-of-type {
+.footer2 a:only-of-type {
     width: 251px;
     height: 42px;
     flex-shrink: 0;
@@ -551,7 +573,7 @@ body {
     line-height: 24px; /* 160% */
 }
 
-div button {
+div a {
     color: #E4D8CC;
     font-family: Inter;
     font-size: 16px;
