@@ -602,22 +602,22 @@ div a {
 .fsection2 {
     height: 280px;
     display: flex;
-
+    justify-content: space-between;
 }
 
-.fsection2 div {
+.fsection2 div:first-of-type {
+    display: flex;
+}
+
+.fsection2 button {
+    text-decoration: none;
+}
+
+.fsection2 div:last-of-type {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     align-items: flex-start;
-}
-
-.fsection2 div:nth-of-type(2) {
-    display: flex;
-    align-items: flex-start;
-}
-
-.fsection2 div:last-of-type {
     margin-right: 72px;
 }
 
